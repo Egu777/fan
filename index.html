@@ -1,0 +1,170 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy Shop</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#1a1a2e;
+    color:white;
+}
+
+header{
+    background:#16213e;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    color:gold;
+    margin:0;
+}
+
+header p{
+    color:#d4d4d4;
+}
+
+.catalogo{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.producto{
+    background:#22254b;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.producto img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.producto h3{
+    color:gold;
+}
+
+.precio{
+    font-size:22px;
+    color:#7CFC00;
+    font-weight:bold;
+}
+
+.descripcion{
+    padding:0 15px;
+}
+
+button{
+    background:gold;
+    border:none;
+    padding:10px 20px;
+    margin:15px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#ffd700;
+}
+
+footer{
+    background:#16213e;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏰 Fantasy Shop ⚔️</h1>
+    <p>Donde cada compra es una nueva aventura</p>
+</header>
+
+<section class="catalogo">
+
+    <div class="producto">
+        <img src="https://picsum.photos/400/300?random=1" alt="Espada Legendaria">
+        <h3>Espada del Dragón Negro</h3>
+        <p class="precio">$59.99</p>
+        <p class="descripcion">
+            Réplica coleccionable inspirada en las armas de los héroes legendarios.
+        </p>
+        <button>Agregar al Inventario</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://picsum.photos/400/300?random=2" alt="Dragon">
+        <h3>Figura de Dragón Épico</h3>
+        <p class="precio">$39.99</p>
+        <p class="descripcion">
+            Figura detallada de un dragón ancestral para coleccionistas.
+        </p>
+        <button>Agregar al Inventario</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://picsum.photos/400/300?random=3" alt="Amuleto">
+        <h3>Amuleto del Mago Supremo</h3>
+        <p class="precio">$24.99</p>
+        <p class="descripcion">
+            Collar temático inspirado en artefactos mágicos de fantasía.
+        </p>
+        <button>Agregar al Inventario</button>
+    </div>
+
+    <div class="producto">
+        <img src="https://picsum.photos/400/300?random=4" alt="Dado RPG">
+        <h3>Set de Dados RPG</h3>
+        <p class="precio">$14.99</p>
+        <p class="descripcion">
+            Juego completo de dados para aventuras de rol.
+        </p>
+        <button>Agregar al Inventario</button>
+    </div>
+
+</section>
+
+<section class="registro">
+    <h2>📦 Registro principal: Producto</h2>
+
+    <pre>
+Producto (
+    CodigoProducto: Entero,
+    NombreProducto: Cadena,
+    Categoria: Cadena,
+    Precio: Real,
+    Stock: Entero,
+    Descripcion: Cadena,
+    Rareza: Cadena
+)
+    </pre>
+
+    <h3>🔑 Clave del registro</h3>
+    <p><b>CodigoProducto</b></p>
+
+    <p>
+    Se utiliza como clave porque identifica de forma única cada producto dentro del sistema.
+    No puede repetirse y permite organizar, buscar y gestionar los productos sin ambigüedad.
+    </p>
+</section>
+
+<footer>
+    © 2026 Fantasy Shop | Tienda de Videojuegos y Fantasía
+</footer>
+
+</body>
+</html>
+```
